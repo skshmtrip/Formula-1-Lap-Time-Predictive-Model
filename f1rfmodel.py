@@ -60,7 +60,7 @@ try:
     event_name = input("what event was it twin? (case sensitive)? ")
 
     if event_name not in event_to_id:
-        print("this event not in training data bruh.")
+        print("this event not in the training data bruh.")
     else:
         event_id = event_to_id[event_name]
         sample = [[driver, air_temp, track_temp, event_id]]
@@ -68,4 +68,5 @@ try:
         print("heres the lap time:", round(prediction[0], 3), "seconds")
 
 except ValueError:
+
     print("son... wrong input type.")
